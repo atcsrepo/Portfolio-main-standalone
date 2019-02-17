@@ -1,0 +1,80 @@
+@keyframes spinner {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes blinker {
+  0% {border-color: black;}
+  50% {border-color: grey;}
+  100% {border-color: black;}
+}
+
+.loader {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  top: calc(50vh - 3rem);
+  left: calc(50vw - 3rem);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.loader:after {
+  position: absolute;
+  content: "";
+  top: -.75rem;
+  left: -.75rem;
+  height: 100%;
+  width: 100%;
+  border: 0.75rem solid rgba(175, 143, 186, 0.05);
+  border-top: 0.75rem solid white;
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;
+}
+
+.life-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+  justify-content: center;
+  height: calc(100vh - 2rem);
+}
+
+.hidden {
+  opacity: 0;
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  pointer-events: none;
+}
+
+.life-content-div{
+  text-align: center;
+}
+
+.life-text {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.75rem 0;
+  box-sizing: border-box;
+}
+
+.life-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /*IE11 can't seem to handle animation along with rendering, so falls to this one*/
+  .loader:after {
+    animation: blinker 2s infinite linear;
+  }
+}

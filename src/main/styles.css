@@ -1,0 +1,157 @@
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+.main-view {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 41rem;
+}
+
+#menu-bar {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.shrink-menu {
+  min-height: 0;
+  height: 2rem;
+}
+  
+.expand-menu {
+  min-height: 41rem;
+  height: 100vh;
+}
+
+.shrunk-menu-text {
+  margin: 0 1rem;
+}
+
+.container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  height: 45%;
+}
+
+.independent-panel {
+  border: 2px solid #4f457b;
+  width: 45%;
+  cursor: pointer;
+  background-color: #eff0f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 19rem;
+  min-width: 19rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.marker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  width: 0;
+}
+
+.image-holder {
+  border-radius: 50%;
+  padding-top: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 0.12rem solid #4f457b;
+}
+
+.panel-image{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+.menu-text {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .main-view {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .expand-menu {
+    min-height: 0;
+    height: auto;
+  }
+
+  .container {
+    height: auto;
+    display: block;
+  }
+
+  #bottom-menu-panel {
+    margin-bottom: 1rem;
+  }
+  
+  .independent-panel {
+    border: 2px solid #4f457b;
+    width: auto;
+    cursor: pointer;
+    background-color: #eff0f5;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    min-height: 0;
+    min-width: 19rem;
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+  }
+  
+  .image-holder {
+    border-radius: 50%;
+    padding-top: 45%;
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 0.12rem solid #4f457b;
+  }
+  
+  .menu-text {
+    text-align: center;
+    width: 45%;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0.5rem;
+  }
+}

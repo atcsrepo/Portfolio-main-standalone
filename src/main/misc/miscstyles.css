@@ -1,0 +1,73 @@
+.misc-container {
+  display: flex;
+  min-height: 650px;
+  align-items: start;
+}
+
+.misc-content-container {
+  display: flex;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: space-around;
+}
+
+.misc-panel {
+  display: inline-block;
+  width: 19rem;
+  background-color: #eff0f5;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+
+.misc-image-div {
+  padding-top: 75%;
+  width: 75%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.misc-image {
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.misc-text {
+  font-size: 1.2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.misc-heading {
+  font-weight: bold;
+}
+
+.get-misc {
+  display: flex;
+  width: 3.1rem;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(239, 240, 245, 0.4);
+  color: rgba(239, 240, 245);
+  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.get-misc:hover {
+  background-color: rgba(239, 240, 245, 0.8);
+  color: black;
+  cursor: pointer;
+}
