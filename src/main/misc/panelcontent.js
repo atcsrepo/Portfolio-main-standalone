@@ -37,7 +37,7 @@ module.exports = {
     topic: "Long Short-Term Memory Network",
     icon: require("../../assets/ai.jpg"),
     language: "Python",
-    link: "https://github.com/atcsrepo/Basic-AI-Algorithms/tree/master/LSTM",
+    link: "https://github.com/atcsrepo/AI-Algorithms/tree/master/LSTM",
     repo: "GitHub",
     text: "A basic python implementation of a LSTM network for text input, based off of this <a href='http://colah.github.io/posts/2015-08-Understanding-LSTMs/' target='_blank'>link</a> and <a href='https://gist.github.com/karpathy/d4dee566867f8291f086' target='_blank'>Karpathy's implementation</a> of a recurrent neural network."
   },
@@ -45,7 +45,7 @@ module.exports = {
     topic: "Artificial Neural Network",
     icon: require("../../assets/ai.jpg"),
     language: "Python",
-    link: "https://github.com/atcsrepo/Basic-AI-Algorithms/tree/master/ANN",
+    link: "https://github.com/atcsrepo/AI-Algorithms/tree/master/ANN",
     repo: "GitHub",
     text: "Based off of Michael Nielson's Neural Networks and Deep Learning <a href='http://neuralnetworksanddeeplearning.com' target='_blank'>book</a>, which involves written digit identification. Includes additional modifications detailed within (e.g. basic learning rate regulators/early stop) and beyond (e.g. gradient check) the scope of the book."
   },
